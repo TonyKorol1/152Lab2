@@ -1,4 +1,4 @@
-module bit2adder (
+module twoBitAdder (
     input   wire    a0, a1, b0, b1, cin,
     output  wire    s0, s1, cout
          

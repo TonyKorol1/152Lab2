@@ -9,12 +9,10 @@ module fourBitAdder_TwoByTwo (
 
     
     wire temp1c;
-    wire temp2c;
-    wire temp3c;
     // Students: Implementation goes here
     // Students: Instantiate the `fullAdder` module
     
-    bit2adder a1 (
+    twoBitAdder a1 (
       .a0 (a[0]),
       .a1 (a[1]),
       .b0 (b[0]),
@@ -26,7 +24,7 @@ module fourBitAdder_TwoByTwo (
       
       );
       
-      bit2adder a2 (
+      twoBitAdder a2 (
       .a0 (a[2]),
       .a1 (a[3]),
       .b0 (b[2]),

@@ -9,6 +9,8 @@ module fourBitAdder_FourByOne (
 
     
     wire temp1c;
+    wire temp2c;
+    wire temp3c;
     // Students: Implementation goes here
     // Students: Instantiate the `fullAdder` module
     
