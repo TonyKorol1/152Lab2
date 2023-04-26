@@ -12,7 +12,13 @@ module fourBitAdder_TwoByTwo (
     // Students: Implementation goes here
     // Students: Instantiate the `fullAdder` module
     
-    twoBitAdder a1 (
+   
+   
+twoBitAdder a1 (a[0],a[1],b[0],b[1],cin,s[0],s[1],temp1c);
+twoBitAdder a2 (a[2],a[3],b[2],b[3],cin,s[2],s[3],cout);
+   
+   
+   /* twoBitAdder a1 (
       .a0 (a[0]),
       .a1 (a[1]),
       .b0 (b[0]),
@@ -35,5 +41,7 @@ module fourBitAdder_TwoByTwo (
       .cout (cout)
       
       );
+      
+      */
 
 endmodule
