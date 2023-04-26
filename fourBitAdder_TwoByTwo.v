@@ -1,6 +1,6 @@
 // Students: Write a description for the ripple-carry adder.
 // The module "fourBitAdder_FourByOne" ...
-module fourBitAdder_FourByOne (
+module fourBitAdder_TwoByTwo (
     input   wire [3:0]  a, b,
     input   wire        cin,
     output  wire [3:0]  s,
@@ -9,41 +9,31 @@ module fourBitAdder_FourByOne (
 
     
     wire temp1c;
+    wire temp2c;
+    wire temp3c;
     // Students: Implementation goes here
     // Students: Instantiate the `fullAdder` module
     
-    fullAdder a1 (
-      .a (a[0]),
-      .b (b[0]),
+    bit2adder a1 (
+      .a0 (a[0]),
+      .a1 (a[1]),
+      .b0 (b[0]),
+      .b1 (b[1]),
       .cin (cin),
-      .s  (s[0]),
+      .s0  (s[0]),
+      .s1   (s[1]),
       .cout (temp1c)
       
       );
       
-      fullAdder a2 (
-      .a (a[1]),
-      .b (b[1]),
+      bit2adder a2 (
+      .a0 (a[2]),
+      .a1 (a[3]),
+      .b0 (b[2]),
+      .b1 (b[3]),
       .cin (temp1c),
-      .s  (s[1]),
-      .cout (temp2c)
-      
-      );
-      
-      fullAdder a3 (
-      .a (a[2]),
-      .b (b[2]),
-      .cin (temp2c),
-      .s  (s[2]),
-      .cout (temp3c)
-      
-      );
-      
-      fullAdder a4 (
-      .a (a[3]),
-      .b (b[3]),
-      .cin (temp3c),
-      .s  (s[3]),
+      .s0  (s[2]),
+      .s1   (s[3]),
       .cout (cout)
       
       );

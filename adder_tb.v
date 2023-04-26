@@ -7,7 +7,7 @@ wire [3:0] S;
 reg cin;
 wire cout;
 
-fourBitAdder_FourByOne f0(
+fourBitAdder_TwoByTwo f0(
 // Students: Instantiate the `fourBitAdder_FourByOne` module
     .a (A),
     .b (B),
