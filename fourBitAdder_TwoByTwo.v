@@ -24,7 +24,7 @@ module fourBitAdder_TwoByTwo (
       
       );
       
-      twoBitAdder a2 (
+    twoBitAdder a2 (
       .a0 (a[2]),
       .a1 (a[3]),
       .b0 (b[2]),
