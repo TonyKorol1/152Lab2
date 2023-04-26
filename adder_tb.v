@@ -3,8 +3,8 @@
 module adder_tb;
 
 reg [3:0] A, B;
-wire [3:0] S;
 reg cin;
+wire [3:0] S;
 wire cout;
 
 fourBitAdder_TwoByTwo f0(

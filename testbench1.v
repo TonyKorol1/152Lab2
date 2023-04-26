@@ -1,8 +1,8 @@
 module fa;
 
 reg A, B;
-wire S;
 reg C;
+wire S;
 wire Cout;
 
 fullAdder f0(

@@ -3,8 +3,8 @@
 module test2bitmod;
 
 reg [1:0] a, b;
-wire [1:0] S;
 reg cin;
+wire [1:0] S;
 wire cout;
 integer i;
 
