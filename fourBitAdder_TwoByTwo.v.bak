@@ -14,8 +14,8 @@ module fourBitAdder_TwoByTwo (
     
    
    
-twoBitAdder a1 (a[1:0],b[1:0],cin,s[1:0],temp1c);
-twoBitAdder a2 (a[3:2],b[3:2],temp1c,s[3:2],cout);
+twoBitAdder a1 (a,b,cin,s,temp1c);
+twoBitAdder a2 (a,b,temp1c,s,cout);
    
    
    /* twoBitAdder a1 (

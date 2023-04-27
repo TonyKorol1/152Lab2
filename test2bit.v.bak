@@ -10,10 +10,13 @@ integer i;
 
 twoBitAdder p0(
 // Students: Instantiate the `fourbitadder_FourbyOne` module
-    .a (a),
-    .b (b),
+    .a0 (a[0]),
+    .a1 (a[1]),
+    .b0 (b[0]),
+    .b1 (b[1]),
     .cin (cin),
-    .s (S),
+    .s0 (S[0]),
+    .s1 (S[1]),
     .cout (cout)
 
 );
